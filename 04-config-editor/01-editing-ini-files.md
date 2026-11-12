@@ -15,5 +15,3 @@ EnableFeature = 1
 ```
 
 Press <kbd>Ctrl</kbd>+<kbd>F</kbd> to search inside the file.
-
-HELLO WORLD
