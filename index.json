@@ -1,6 +1,6 @@
 {
  "v": 1,
- "rev": "4e980b969ea9",
+ "rev": "45bdf2279463",
  "title": "San Andreas Mod Manager Wiki",
  "description": "Guides and reference for installing, organising and troubleshooting GTA San Andreas mods with SA Mod Manager.",
  "home": "01-getting-started/01-welcome.md",
@@ -125,6 +125,20 @@
      "heads": [
       "Check in this order"
      ]
+    },
+    {
+     "id": "08-troubleshooting/02-common-crash-causes",
+     "path": "08-troubleshooting/02-common-crash-causes.md",
+     "title": "Common Crash Issues",
+     "summary": "Common issues you might encounter while installing mods.",
+     "tags": [
+      "troubleshooting",
+      "logs"
+     ],
+     "heads": [
+      "Game crashes randomly and doesn't leave a crash log."
+     ],
+     "updated": "2026-11-12"
     }
    ]
   }
