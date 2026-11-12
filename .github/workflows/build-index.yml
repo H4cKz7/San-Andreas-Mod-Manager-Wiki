@@ -1,0 +1,25 @@
+name: Build wiki index
+on:
+  push:
+    branches: [main]
+    paths: ['**.md', '**/_section.json', 'wiki.config.json', 'tools/build-index.js']
+permissions:
+  contents: write
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node tools/build-index.js --check
+      - name: Commit index files
+        run: |
+          if [ -n "$(git status --porcelain index.json search.json)" ]; then
+            git config user.name "wiki-bot"
+            git config user.email "wiki-bot@users.noreply.github.com"
+            git add index.json search.json
+            git commit -m "Rebuild wiki index"
+            git push
+          fi
