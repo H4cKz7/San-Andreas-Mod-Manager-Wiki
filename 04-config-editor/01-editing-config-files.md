@@ -1,5 +1,5 @@
 ---
-title: Editing INI files
+title: Editing Configuration files
 summary: Use the form view, search inside a file and restore backups.
 tags: config, ini, backup, json, jsonc
 ---
